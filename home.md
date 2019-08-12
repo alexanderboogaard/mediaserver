@@ -17,4 +17,4 @@ All code blocks will be formatted as `code`
 
 Please be aware that this setup is mainly for my own convenience, so I can read it back whenever I want to reinstall my own server.
 
-If you screw things up that's up to you.
+If you screw things up that's up to you and I won't help you.
