@@ -1,3 +1,6 @@
+---
+title: Media Install
+---
 This tutorial will help you installing:
 * Plex
 * Sickgear

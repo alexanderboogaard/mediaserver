@@ -1,3 +1,6 @@
+---
+title: Basics Install
+---
 Install CentOS and ssh into it
 
 ```
@@ -45,11 +48,11 @@ sudo nano /etc/fstab
 ```
 and add the following (of course changing the UUID)
 ```
-#Movies 
+#Movies
 UUID=HDD2 /media/movies ext4 defaults 0 0
-#Series 
+#Series
 UUID=HDD3 /media/series ext4 defaults 0 0
-#Timemachine 
+#Timemachine
 UUID=HDD4 /media/timemachine ext4 defaults 0 0
 ```
 
