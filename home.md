@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Intro
 ---
 In this tutorial I will explain what to do to make your own mediaserver:

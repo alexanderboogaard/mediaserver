@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Media Install
 ---
 This tutorial will help you installing:

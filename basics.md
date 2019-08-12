@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Basics Install
 ---
 Install CentOS and ssh into it
