@@ -72,7 +72,7 @@ Finally check if the new firewall rules are applied successfully with:
 sudo firewall-cmd --list-all
 ```
 
-To make sure you can delete the mediafiles from within Plex you have to add the Plex user to your own *groupname*:
+To make sure you can delete the mediafiles from within Plex you have to add the Plex user to your own groupname:
 
 ```
 sudo usermod -a -G groupname plex
@@ -83,9 +83,9 @@ restart the plexmediaserver.service and you can delete files from within plex.
 For a more detailled explanation regarding Plex installation follow this link:
 [How to install Plex Media Server on CentOS 7](https://linuxize.com/post/how-to-install-plex-media-server-on-centos-7/)
 
-#Prerequisites sichkgear, couch potato and autosub
+# Prerequisites sickgear, couch potato and autosub
 
-Because python 2.7 will not be supported on major distros install PYENV for sickrage and couchpotato. Also install git already:
+Because python 2.7 will not be supported on major distros in the future, install PYENV for sickrage and couchpotato. Also install git already:
 
 ```
 sudo yum install git gcc
@@ -125,7 +125,7 @@ sudo firewall-cmd --reload
 
 Time to install sickgear, couchpotato and autosub
 
-#Sickgear
+# Sickgear
 
 ```
 sudo git clone https://github.com/SickGear/SickGear.git /opt/sickgear
@@ -165,7 +165,7 @@ sudo systemctl enable sickgear.service
 sudo systemctl start sickgear.service
 ```
 
-#CouchPotato
+# CouchPotato
 
 For couchpotato to sequence is almost the same.
 
@@ -203,7 +203,7 @@ sudo systemctl enable couchpotato.service
 sudo systemctl start couchpotato.service
 ```
 
-#AutoSub
+# AutoSub
 
 And again for AutoSub:
 ```
@@ -216,7 +216,7 @@ Start autosub to test the install.
 /opt/pyenv/versions/2.7.16/bin/python /opt/autosub/AutoSub.py
 ```
 
-Go to http://localhost:9960 to check the install and stop the service
+Go to http://localhost:9960 to check the install and stop the service.
 Alternatively hit Ctrl+C from terminal
 
 To enable services after reboot:
@@ -251,4 +251,46 @@ Save and close file (edit username and groupname)
 ```
 sudo systemctl enable autosub.service
 sudo systemctl start autosub.service
+```
+
+# Transmission
+
+Install transmssion to download torrents:
+
+```
+sudo yum install transmission-daemon transmission-cli
+```
+
+After the install start and stop the daemon:
+
+```
+sudo systemctl start transmission-daemon.service
+sudo systemctl stop transmission-daemon.service
+```
+
+The config file for Transmission should only be edited while transmission is not running, because else the config files will be overwritten when closing.
+
+```
+sudo nano /var/lib/transmission/.config/transmission-daemon/settings.json
+```
+edit the 'umask' setting to 2
+
+save and close the file.
+
+Add transmission to your group and start transmission
+```
+sudo usermod -a -G username transmission
+sudo systemctl start transmission-daemon.service
+```
+
+# Unrar
+To be able to unrar your files you ahve to install unrar. There is a unrar-free version included in most distro's but I have found that you are better off using the non-free version.
+
+```
+mkdir /opt/unrar
+cd /opt/unrar
+wget https://www.rarlab.com/rar/rarlinux-x64-5.5.0.tar.gz
+tar -zxvf rarlinux-x64-5.5.0.tar.gz
+cd rar
+sudo cp -v unrar /usr/local/bin/
 ```
