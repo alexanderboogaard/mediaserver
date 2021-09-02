@@ -1,2 +1,4 @@
 name: alexander
 markdown: kramdown
+
+theme: jekyll-theme-hacker
