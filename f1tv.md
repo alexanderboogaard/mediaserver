@@ -5,11 +5,13 @@ title: F1TV
 Using this tutorial, you don't need a VPN to create an account.
 
 Wipe old iPhone.
+Start adding new account on iPhone.
+Select the language that you want, but make sure you select Turkey as country.
 Create new account using gmail address, but add +cheapf1 to your normal username:
 ```
 normal.username+cheapf1@gmail.com
 ```
-Gmail redirects everything to your default email address.
+Gmail redirects everything that is send to this email address to your default email address.
 (This way you could also create separate accounts for different websites. Than you can also see who's reselllling/sharing your data without permission.)
 
 Setup App-store to use the Turkish Store.
