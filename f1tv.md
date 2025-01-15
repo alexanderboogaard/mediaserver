@@ -11,7 +11,7 @@ Create a **new** appleID using gmail address, but add +f1 to your normal usernam
 ```
 normal.username+f1@gmail.com
 ```
-Just select an easy to remember password. Is not necessarily the same as 
+Just select an easy to remember new password.
 
 Gmail redirects everything that is send to this email address to your default email address.
 (This way you could also create separate accounts for different websites. Than you can also see who's reselllling/sharing your data without permission.)
