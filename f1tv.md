@@ -7,10 +7,12 @@ Using this tutorial, you don't need a VPN to create an account.
 Wipe old iPhone.
 Start adding new account on iPhone.
 Select the language that you want, but make sure you select Turkey as country.
-Create new account using gmail address, but add +cheapf1 to your normal username:
+Create a **new** appleID using gmail address, but add +f1 to your normal username, so it looks like:
 ```
-normal.username+cheapf1@gmail.com
+normal.username+f1@gmail.com
 ```
+Just select an easy to remember password. Is not necessarily the same as 
+
 Gmail redirects everything that is send to this email address to your default email address.
 (This way you could also create separate accounts for different websites. Than you can also see who's reselllling/sharing your data without permission.)
 
