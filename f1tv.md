@@ -13,11 +13,17 @@ normal.username+f1@gmail.com
 ```
 Just select an easy to remember new password.
 
+When asked to enter a verification phone number, you can select your normal phone number. This number is only used to make sure there is a real person behind creating the account.
+A verification code is send to your normal number. Enter that verificationnumber on your old phone and the setup will continue.
+
 Gmail redirects everything that is send to this email address to your default email address.
 (This way you could also create separate accounts for different websites. Than you can also see who's reselllling/sharing your data without permission.)
 
-Setup App-store to use the Turkish Store.
 Install F1TV app through the appstore.
+Propbably you will be asked to create a store account. Enter a Turkish address here. There is no need to provide creditcard details, as you will be paying with giftcards.
+Setup App-store to use the Turkish Store.
+
+After setting up the App store and installing the F1TV app, open the F1TV app.
 From within the F1TV app, create a F1TV account using a turkish address (maybe the embassy 😄), and use the emailadress that you created above (the one with +cheapf1).
 Hit the subscribe button to check what the subscription price is (currently 349,99TR = roughly 18 euro).
 
